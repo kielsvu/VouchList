@@ -4,114 +4,78 @@
 <meta charset="UTF-8">
 <title>TrustKiel BloxFruit Receipt</title>
 <style>
-    /* PAGE STYLING */
-    body {
-        margin: 0;
-        padding: 0;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #0b0b0b;
-        font-family: 'Arial', sans-serif;
-        color: white;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0b0b;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
 
-    /* RECEIPT PANEL */
-    .receipt-panel {
-        background: #121212;
-        padding: 30px 40px;
-        border-radius: 16px;
-        width: 520px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.7);
-    }
+.receipt-panel {
+    background: #121212;
+    padding: 30px 40px;
+    border-radius: 16px;
+    width: 520px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+}
 
-    /* LOGO */
-    .logo {
-        display: block;
-        margin: 0 auto 10px auto;
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 20px; /* Rounded corners */
-    }
+.logo {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 240px;       /* 16:9 width */
+    height: 135px;      /* 16:9 height */
+    object-fit: cover;  /* maintain aspect ratio */
+    border-radius: 20px; /* rounded corners */
+}
 
-    /* HEADER */
-    .header {
-        text-align: center;
-        margin-bottom: 12px;
-    }
+.header {
+    text-align: center;
+    margin-bottom: 12px;
+}
 
-    .header h1 {
-        margin: 0;
-        font-size: 22px;
-        color: #f43f5e;
-    }
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #f43f5e;
+}
 
-    .total-vouch {
-        text-align: center;
-        font-size: 14px;
-        color: #facc15;
-        margin-bottom: 20px;
-    }
+.total-vouch {
+    text-align: center;
+    font-size: 14px;
+    color: #facc15;
+    margin-bottom: 20px;
+}
 
-    /* SERVICE SECTION */
-    .service-section {
-        margin-top: 20px;
-    }
+.service-section {
+    margin-top: 20px;
+}
 
-    .service-section h2 {
-        font-size: 16px;
-        color: #34d399;
-        margin-bottom: 10px;
-        border-bottom: 1px solid #777;
-        padding-bottom: 4px;
-    }
+.service-section h2 {
+    font-size: 16px;
+    color: #34d399;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 4px;
+}
 
-    /* VOUCH ITEMS */
-    .vouch {
-        background: #1a1a1a;
-        border-radius: 12px;
-        padding: 12px 16px;
-        margin-bottom: 12px;
-    }
+.vouch {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+}
 
-    .vouch .userid {
-        font-weight: bold;
-        color: #f43f5e;
-        font-size: 13px;
-    }
-
-    .vouch .service {
-        font-weight: 600;
-        color: #facc15;
-        font-size: 13px;
-        margin-top: 4px;
-    }
-
-    .vouch .feedback {
-        font-size: 13px;
-        color: #ddd;
-        margin-top: 4px;
-    }
-
-    .vouch .rating {
-        font-size: 13px;
-        color: #38bdf8;
-        margin-top: 4px;
-    }
-
-    .vouch .price {
-        font-size: 13px;
-        color: #34d399;
-        margin-top: 4px;
-    }
-
-    .vouch .date {
-        font-size: 12px;
-        color: #777;
-        margin-top: 4px;
-    }
+.vouch .userid { font-weight: bold; color: #f43f5e; font-size: 13px; }
+.vouch .service { font-weight: 600; color: #facc15; font-size: 13px; margin-top: 4px; }
+.vouch .feedback { font-size: 13px; color: #ddd; margin-top: 4px; }
+.vouch .rating { font-size: 13px; color: #38bdf8; margin-top: 4px; }
+.vouch .price { font-size: 13px; color: #34d399; margin-top: 4px; }
+.vouch .date { font-size: 12px; color: #777; margin-top: 4px; }
 </style>
 </head>
 <body>
@@ -131,7 +95,7 @@
         Total Unlisted Vouches: 126
     </div>
 
-    <!-- FULL GEAR SECTION -->
+    <!-- FULL GEAR -->
     <div class="service-section">
         <h2>FULL GEAR</h2>
 
@@ -190,7 +154,7 @@
         </div>
     </div>
 
-    <!-- BLUE GEAR SECTION -->
+    <!-- BLUE GEAR -->
     <div class="service-section">
         <h2>BLUE GEAR</h2>
 
@@ -213,7 +177,7 @@
         </div>
     </div>
 
-    <!-- LEVI SECTION -->
+    <!-- LEVI -->
     <div class="service-section">
         <h2>LEVI</h2>
 
