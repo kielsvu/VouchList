@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>TrustKiel BloxFruit Receipt</title>
+
 <style>
 body {
     margin: 0;
@@ -12,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #0b0b0b;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: white;
 }
 
@@ -27,10 +28,10 @@ body {
 .logo {
     display: block;
     margin: 0 auto 10px auto;
-    width: 240px;       /* 16:9 width */
-    height: 135px;      /* 16:9 height */
-    object-fit: cover;  /* maintain aspect ratio */
-    border-radius: 20px; /* rounded corners */
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .header {
@@ -78,24 +79,22 @@ body {
 .vouch .date { font-size: 12px; color: #777; margin-top: 4px; }
 </style>
 </head>
+
 <body>
 
 <div class="receipt-panel">
 
-    <!-- LOGO -->
-    <img src="https://raw.githubusercontent.com/kielsvu/Utility/Lua/Icons/IMG_20260101_195045.jpg" alt="TrustKiel Logo" class="logo">
+    <img src="https://raw.githubusercontent.com/kielsvu/Utility/Lua/Icons/IMG_20260101_195045.jpg" class="logo">
 
-    <!-- HEADER -->
     <div class="header">
         <h1>TrustKiel BloxFruit Receipt</h1>
     </div>
 
-    <!-- TOTAL VOUCH -->
     <div class="total-vouch">
         Total Unlisted Vouches: 126
     </div>
 
-    <!-- FULL GEAR -->
+    <!-- FULL GEAR (Already ordered by date) -->
     <div class="service-section">
         <h2>FULL GEAR</h2>
 
@@ -154,9 +153,18 @@ body {
         </div>
     </div>
 
-    <!-- BLUE GEAR -->
+    <!-- BLUE GEAR (FIXED ORDER) -->
     <div class="service-section">
         <h2>BLUE GEAR</h2>
+
+        <div class="vouch">
+            <div class="userid">Discord ID: 1037901440938680350</div>
+            <div class="service">Blue Gear</div>
+            <div class="feedback">N/A</div>
+            <div class="rating">-/10</div>
+            <div class="price">₱60</div>
+            <div class="date">Jan 02 2025</div>
+        </div>
 
         <div class="vouch">
             <div class="userid">Discord ID: 1037901440938680350</div>
