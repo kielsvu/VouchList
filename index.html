@@ -2,38 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>TrustKiel BloxFruit Receipt</title>
+<title>TrustKiel BloxFruit Vouch</title>
 
 <style>
 body {
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
     background: #0b0b0b;
     font-family: Arial, sans-serif;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 
-.receipt-panel {
+.container {
+    width: 100%;
+    max-width: 520px;
     background: #121212;
-    padding: 30px 40px;
+    padding: 25px;
     border-radius: 16px;
-    width: 520px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.7);
 }
 
+/* LOGO */
 .logo {
-    display: block;
-    margin: 0 auto 10px auto;
-    width: 240px;
-    height: 135px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 18px;
+    margin-bottom: 10px;
 }
 
+/* HEADER */
 .header {
     text-align: center;
     margin-bottom: 12px;
@@ -45,161 +45,148 @@ body {
     color: #f43f5e;
 }
 
-.total-vouch {
-    text-align: center;
+.sub {
     font-size: 14px;
     color: #facc15;
-    margin-bottom: 20px;
 }
 
-.service-section {
+/* SECTION */
+.section {
     margin-top: 20px;
 }
 
-.service-section h2 {
+.section h2 {
     font-size: 16px;
     color: #34d399;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #555;
     padding-bottom: 4px;
+    margin-bottom: 10px;
 }
 
+/* VOUCH CARD */
 .vouch {
     background: #1a1a1a;
     border-radius: 12px;
-    padding: 12px 16px;
+    padding: 12px;
     margin-bottom: 12px;
+    font-size: 13px;
 }
 
-.vouch .userid { font-weight: bold; color: #f43f5e; font-size: 13px; }
-.vouch .service { font-weight: 600; color: #facc15; font-size: 13px; margin-top: 4px; }
-.vouch .feedback { font-size: 13px; color: #ddd; margin-top: 4px; }
-.vouch .rating { font-size: 13px; color: #38bdf8; margin-top: 4px; }
-.vouch .price { font-size: 13px; color: #34d399; margin-top: 4px; }
-.vouch .date { font-size: 12px; color: #777; margin-top: 4px; }
+.userid { color: #f43f5e; font-weight: bold; }
+.service { color: #facc15; margin-top: 4px; }
+.feedback { color: #ddd; margin-top: 4px; }
+.rating { color: #38bdf8; margin-top: 4px; }
+.price { color: #34d399; margin-top: 4px; }
+.date { color: #888; margin-top: 4px; font-size: 12px; }
 </style>
 </head>
 
 <body>
 
-<div class="receipt-panel">
+<div class="container">
 
-    <img src="https://raw.githubusercontent.com/kielsvu/Utility/Lua/Icons/IMG_20260101_195045.jpg" class="logo">
+<!-- 🔧 EDIT LOGO LINK HERE -->
+<img class="logo" src="https://raw.githubusercontent.com/kielsvu/Utility/Lua/Icons/IMG_20260101_195045.jpg">
 
-    <div class="header">
-        <h1>TrustKiel BloxFruit Receipt</h1>
-    </div>
+<div class="header">
+    <!-- 🔧 EDIT TITLE HERE -->
+    <h1>TrustKiel BloxFruit Vouch</h1>
 
-    <div class="total-vouch">
-        Total Unlisted Vouches: 126
-    </div>
+    <!-- 🔧 EDIT TOTAL HERE -->
+    <div class="sub">Total Unlisted Vouches: 126</div>
+</div>
 
-    <!-- FULL GEAR (Already ordered by date) -->
-    <div class="service-section">
-        <h2>FULL GEAR</h2>
+<!-- ================= FULL GEAR ================= -->
+<div class="section">
+<h2>FULL GEAR</h2>
 
-        <div class="vouch">
-            <div class="userid">Discord ID: 1037901440938680350</div>
-            <div class="service">Full Gear (Ghoul)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Dec 06 2025</div>
-        </div>
+<!-- 🔧 COPY THIS BLOCK TO ADD MORE FULL GEAR VOUCH -->
+<div class="vouch">
+    <div class="userid">Discord ID: 1442138909399191653</div>
+    <div class="service">Full Gear (Shark)</div>
+    <div class="feedback">Trusted Piloter</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱160</div>
+    <div class="date">Dec 06 2025</div>
+</div>
 
-        <div class="vouch">
-            <div class="userid">Discord ID: 1096000028826411120</div>
-            <div class="service">Full Gear (Shark)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Dec 20 2025</div>
-        </div>
+<div class="vouch">
+    <div class="userid">Discord ID: 1442138909399191653</div>
+    <div class="service">Full Gear (Ghoul)</div>
+    <div class="feedback">Trusted Piloter</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱160</div>
+    <div class="date">Dec 29 2025</div>
+</div>
 
-        <div class="vouch">
-            <div class="userid">Discord ID: 1442138909399191653</div>
-            <div class="service">Full Gear (Ghoul)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Dec 29 2025</div>
-        </div>
+<div class="vouch">
+    <div class="userid">Discord ID: 1442138909399191653</div>
+    <div class="service">Full Gear (Angel)</div>
+    <div class="feedback">Legit Piloter</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱160</div>
+    <div class="date">Dec 30 2025</div>
+</div>
 
-        <div class="vouch">
-            <div class="userid">Discord ID: 1043373780631830619</div>
-            <div class="service">Full Gear (Cyborg)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Dec 29 2025</div>
-        </div>
+<div class="vouch">
+    <div class="userid">Discord ID: 1043373780631830619</div>
+    <div class="service">Full Gear (Cyborg)</div>
+    <div class="feedback">Legit And Trusted Piloter</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱160</div>
+    <div class="date">Dec 30 2025</div>
+</div>
 
-        <div class="vouch">
-            <div class="userid">Discord ID: 1442138909399191653</div>
-            <div class="service">Full Gear (Angel)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Dec 30 2025</div>
-        </div>
-
-        <div class="vouch">
-            <div class="userid">Discord ID: 1442138909399191653</div>
-            <div class="service">Full Gear (Human)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱160</div>
-            <div class="date">Jan 01 2026</div>
-        </div>
-    </div>
-
-    <!-- BLUE GEAR (FIXED ORDER) -->
-    <div class="service-section">
-        <h2>BLUE GEAR</h2>
-
-        <div class="vouch">
-            <div class="userid">Discord ID: 1037901440938680350</div>
-            <div class="service">Blue Gear</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱60</div>
-            <div class="date">Jan 02 2025</div>
-        </div>
-
-        <div class="vouch">
-            <div class="userid">Discord ID: 1037901440938680350</div>
-            <div class="service">Blue Gear</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱60</div>
-            <div class="date">Dec 06 2025</div>
-        </div>
-
-        <div class="vouch">
-            <div class="userid">Discord ID: 1442138909399191653</div>
-            <div class="service">Blue Gear</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱60</div>
-            <div class="date">Dec 31 2025</div>
-        </div>
-    </div>
-
-    <!-- LEVI -->
-    <div class="service-section">
-        <h2>LEVI</h2>
-
-        <div class="vouch">
-            <div class="userid">Discord ID: 1037901440938680350</div>
-            <div class="service">Levi (Tiki)</div>
-            <div class="feedback">N/A</div>
-            <div class="rating">-/10</div>
-            <div class="price">₱80</div>
-            <div class="date">Dec 11 2025</div>
-        </div>
-    </div>
+<div class="vouch">
+    <div class="userid">Discord ID: 1442138909399191653</div>
+    <div class="service">Full Gear (Human)</div>
+    <div class="feedback">Trusted Piloter</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱160</div>
+    <div class="date">Jan 01 2026</div>
+</div>
 
 </div>
 
+<!-- ================= BLUE GEAR ================= -->
+<div class="section">
+<h2>BLUE GEAR</h2>
+
+<div class="vouch">
+    <div class="userid">Discord ID: 1442138909399191653</div>
+    <div class="service">Blue Gear</div>
+    <div class="feedback">Fast Service</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱60</div>
+    <div class="date">Jan 31 2025</div>
+</div>
+
+<div class="vouch">
+    <div class="userid">Discord ID: 1037901440938680350</div>
+    <div class="service">Blue Gear</div>
+    <div class="feedback">Fast and Trusted</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱60</div>
+    <div class="date">Jan 2 2026</div>
+</div>
+
+</div>
+
+<!-- ================= LEVI ================= -->
+<div class="section">
+<h2>LEVI</h2>
+
+<div class="vouch">
+    <div class="userid">Discord ID: 1037901440938680350</div>
+    <div class="service">Levi (Tiki)</div>
+    <div class="feedback">Spawned In Just 5mins, Legit</div>
+    <div class="rating">10/10</div>
+    <div class="price">₱80</div>
+    <div class="date">Dec 11 2025</div>
+</div>
+
+</div>
+
+</div>
 </body>
 </html>
